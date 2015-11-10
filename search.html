@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>MOVIE PAL</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="animate/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div id="wrap">
+		<nav>
+			<a href="search.html">SEARCH</a> |
+			<a href="favorites.html">FAVORITES</a>
+		</nav>
+		
+		<!-- SEARCH -->
+		<div id="search">
+
+			<!-- INPUT FORM -->
+			<form id="movie-form" autocomplete="off">
+				<input type="text" name="movie-name" placeholder="Movie Title"><!--
+				--><input type="submit" name="movie-submit" value="Search">
+			</form>
+
+			<!-- SEARCH RESULTS WRAPPER -->
+			<div id="search-results">
+
+				<!-- TEMPLATE FOR DISPLAYING A MOVIE -->
+				<div class="movie-result animated fadeIn">
+					<figure class="poster-figure">
+						<img class="poster">
+						<i class="favorite-button fa fa-heart"></i>
+					</figure>
+					<div class="title">Kung Fu Hustle</div>
+					<div>
+						<span class="label">Release Date:</span> 
+						<span class="release-date">2004-12-20</span>
+					</div>
+					<div>
+						<span class="label">Popularity:</span> 
+						<span class="popularity">0.736953</span>
+					</div>			
+					<div class="plot">
+						In Shanghai, China in the 1940s, a wannabe gangster aspires to join the notorious "Axe Gang" while residents of a housing complex exhibit extraordinary powers in defending their turf.
+					</div>	
+
+				</div>	
+
+			</div>
+
+		</div>	
+			
+	</div>
+
+	<script src="js/api-caller.js" type="text/javascript"></script>
+	<script src="js/storable-data.js" type="text/javascript"></script>  
+	<script src="js/search.js" type="text/javascript"></script> 
+</body>
+</html>

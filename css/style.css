@@ -1,0 +1,208 @@
+/* 
+	BASIC PAGE STYLING
+*/
+* {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+#wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+.one-column {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+nav {
+	margin-bottom: 30px;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+
+/* 
+	SEARCH PAGE
+*/
+#movie-form {
+    width: 100%;
+    background-color: #f7f7f7;
+	color: #5A5A5A;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+#movie-form input {
+	display: inline-block;	
+	text-align: center;
+	padding: 10px 5px;
+	margin: 0;
+	background-color: white;
+	color: #323a45;
+	font-size: 25px;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+#movie-form input[type="text"] {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	width: 75%;
+}
+#movie-form input[type="submit"] {
+	background-color: #5CD0ED;
+	color: white;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 25%;
+	height: 100%;
+}
+#movie-form input[type="submit"]:hover {
+	background-color: #1AB9E1;
+}
+#movie-form input[type="submit"]:active {
+	background-color: #1388A6;
+}
+#movie-form input, 
+#movie-form input:hover {
+	outline: 0;
+	vertical-align: middle;
+	border: 0;
+}
+
+/* 
+	MOVIE STYLING
+*/
+#search {
+	width: 80%;
+	margin: 0 auto;
+}
+#search-results {
+	width: 100%;
+}
+.movie-result {
+	width: 100%;
+	height: 231px;
+	margin-bottom: 20px;
+	text-align: left;
+	overflow: hidden;
+}
+.movie-result .title {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 2.25em;
+	padding-bottom: 5px;
+}
+.movie-result .label {
+	font-weight: bold;
+}
+.movie-result .plot {
+	padding-top: 12px;
+	text-align: justify;
+	overflow: hidden;    
+	height: 137px;
+}
+.movie-result .favorite-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	color: white;
+	opacity: 0.2;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	text-shadow: 0px 0px 7px #000;
+}
+.movie-result .favorite-button:hover {
+	opacity: 0.9;
+	font-size: 70px;
+} 
+.movie-result .favorite-added {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	color: white;
+	opacity: 0.9;
+	transition: all 0.4s ease;
+	text-shadow: 0px 0px 7px #000;
+}
+
+
+.movie-result .poster-figure {	
+	position: relative;
+	padding: 0;
+	margin: 0;
+	float: left;
+	padding-right: 10px;
+}
+.movie-result img {
+	width: 154px;
+	height: 231px;
+    display: block;
+    vertical-align: top;
+}
+
+/* 
+	FAVORITES PAGE
+*/
+.favorite-display {
+	width: 780px;
+	margin: 25px auto;
+}
+.favorite-display .favorite-figure {	
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+.favorite-display .remove-button {
+	position: absolute;
+	bottom: 10px;
+	right: 5px;
+	font-size: 3em;
+	color: white;
+	text-shadow: 0px 0px 5px #000;
+	cursor: pointer;
+	z-index: 2; /* So that the button is on top of everything else */
+	transition: all 0.4s ease;
+}
+.favorite-display .remove-button:hover {
+	font-size: 3.6em;
+}
+.favorite-display img {
+	width: 780px;
+	height: 439px;
+    display: block;
+    vertical-align: top;
+}
+.favorite-display .title {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 10px 5px 10px;
+	font-size: 3em;
+	color: white;
+	font-weight: bold;
+	text-shadow: 0px 0px 5px #000;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	letter-spacing: 1px;
+}
+
+
+/* 
+	MOST POPULAR PAGE
+*/
+#popular-list {
+	text-align: center;
+	font-size: 2em;
+}
